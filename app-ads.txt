@@ -1,0 +1,3 @@
+# Tempest Studio app-ads.txt
+# AppLovin 대시보드 Account > Keys 화면 등에 있는 app-ads.txt 줄을 여기에 붙인다 (예: applovin.com, <퍼블리셔 ID>, DIRECT, ...)
+# 네트워크를 추가할 때마다 MAX가 알려 주는 줄을 아래에 더한다
