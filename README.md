@@ -1,6 +1,8 @@
 # studio-tempest.github.io
 
-Tempest Studio 회사 사이트 (GitHub Pages).
+템페스트 스튜디오(Tempest Studio) 공식 홈페이지입니다. GitHub Pages로 운영합니다.
+
+- 공식 문의 이메일: `support@tempeststudio.co.kr`
 
 - `index.html`: 회사 소개
 - `privacy.html`: 개인정보처리방침 (구글 플레이 등록에 필요)

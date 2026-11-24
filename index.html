@@ -1,51 +1,121 @@
 <!doctype html>
 <html lang="ko">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tempest Studio</title>
-<meta name="description" content="Tempest Studio - 모바일 게임 개발 스튜디오 / Mobile game studio">
-<style>
-  :root { --bg:#0f1220; --card:#181c2f; --text:#e9ecf5; --sub:#9aa3bd; --accent:#6c8cff; }
-  * { box-sizing:border-box; }
-  body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Apple SD Gothic Neo","Malgun Gothic",sans-serif; background:var(--bg); color:var(--text); line-height:1.7; }
-  .wrap { max-width:760px; margin:0 auto; padding:72px 20px 48px; }
-  h1 { font-size:44px; margin:0 0 8px; letter-spacing:-0.5px; }
-  .tag { color:var(--accent); font-weight:600; margin:0 0 32px; }
-  .card { background:var(--card); border-radius:16px; padding:24px 28px; margin:0 0 20px; }
-  .card h2 { font-size:20px; margin:0 0 8px; }
-  .card p { margin:0; color:var(--sub); }
-  a { color:var(--accent); }
-  footer { color:var(--sub); font-size:14px; margin-top:40px; }
-  footer a { margin-right:16px; }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#151310">
+  <title>템페스트 스튜디오 | Tempest Studio</title>
+  <meta name="description" content="템페스트 스튜디오는 모바일 게임을 만드는 독립 개발 스튜디오입니다. 개발 중인 모바일 전략 게임 ProjectWW를 만나보세요.">
+  <meta property="og:title" content="템페스트 스튜디오 | Tempest Studio">
+  <meta property="og:description" content="작고 단단한 모바일 게임을 만듭니다.">
+  <meta property="og:image" content="https://tempeststudio.co.kr/assets/projectww-key-art.webp">
+  <link rel="icon" href="assets/tempest-icon.png" type="image/png">
+  <link rel="stylesheet" href="studio.css">
+  <script>
+    if (new URLSearchParams(location.search).get('lang') === 'en') {
+      document.documentElement.lang = 'en';
+      document.title = 'Tempest Studio | Independent Mobile Game Studio';
+    }
+  </script>
 </head>
-<body>
-<div class="wrap">
-  <h1>Tempest Studio</h1>
-  <p class="tag">작고 단단한 모바일 게임을 만듭니다 · Mobile Game Studio</p>
+<body id="top">
+  <a class="skip-link" href="#main">
+    <span data-language="ko">본문 바로가기</span><span data-language="en">Skip to content</span>
+  </a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="wordmark" href="#top">
+        <img src="assets/tempest-icon.png" alt="" width="34" height="34">
+        <span>TEMPEST<span class="wordmark-small">STUDIO</span></span>
+      </a>
+      <nav class="site-nav">
+        <a href="#games"><span data-language="ko">게임</span><span data-language="en">Games</span></a>
+        <a href="#contact"><span data-language="ko">문의</span><span data-language="en">Contact</span></a>
+        <a class="language-link" data-language="ko" href="?lang=en" lang="en" hreflang="en" aria-label="Switch to English">EN</a>
+        <a class="language-link" data-language="en" href="./" lang="ko" hreflang="ko" aria-label="한국어로 전환">KO</a>
+      </nav>
+    </div>
+  </header>
 
-  <div class="card">
-    <h2>소개 · About</h2>
-    <p>Tempest Studio는 누구나 쉽게 시작하고 오래 즐길 수 있는 모바일 게임을 만드는 1인 개발 스튜디오입니다.<br>
-    Tempest Studio is an independent studio making mobile games that are easy to pick up and fun to keep playing.</p>
-  </div>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-art" src="assets/projectww-key-art.webp" alt="" width="884" height="1570" fetchpriority="high">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <p class="eyebrow">
+            <span data-language="ko">독립 모바일 게임 스튜디오</span>
+            <span data-language="en">Independent mobile game studio</span>
+          </p>
+          <h1 id="hero-title">
+            <span data-language="ko">작고 단단한<br><em>모바일 게임.</em></span>
+            <span data-language="en">Small games.<br><em>Built to last.</em></span>
+          </h1>
+          <p class="hero-description">
+            <span data-language="ko">템페스트 스튜디오는 누구나 쉽게 시작하고 오래 즐길 수 있는 모바일 게임을 만듭니다.</span>
+            <span data-language="en">Tempest Studio makes mobile games that are easy to pick up and fun to keep playing.</span>
+          </p>
+          <a class="button" href="#games">
+            <span data-language="ko">개발 중인 게임 보기</span><span data-language="en">See what we’re making</span>
+          </a>
+        </div>
+      </div>
+    </section>
 
-  <div class="card">
-    <h2>게임 · Games</h2>
-    <p>첫 번째 게임을 준비하고 있습니다. 곧 Google Play에서 만나요.<br>
-    Our first game is in development. Coming soon to Google Play.</p>
-  </div>
+    <section class="project-section container" id="games" aria-labelledby="project-title">
+      <div class="project-grid">
+        <div class="project-copy">
+          <p class="eyebrow">
+            <span data-language="ko">모바일 전략 · 개발 중</span><span data-language="en">Mobile strategy · In development</span>
+          </p>
+          <h2 id="project-title">ProjectWW</h2>
+          <p class="project-description">
+            <span data-language="ko">식량을 모아 유닛을 전장에 내보내고, 우리 기지를 지키면서 적의 기지를 공략하는 모바일 전략 게임입니다.</span>
+            <span data-language="en">Gather food, deploy your units and take down the enemy base while defending your own in this mobile strategy game.</span>
+          </p>
+          <p class="project-platform">
+            <span data-language="ko">ProjectWW는 개발명입니다. Android 출시를 준비하고 있습니다.</span>
+            <span data-language="en">ProjectWW is the working title. We’re preparing an Android release.</span>
+          </p>
+        </div>
+        <figure class="project-figure">
+          <div class="project-art">
+            <img class="battlefield" src="assets/projectww-battlefield.webp" loading="lazy" width="960" height="660"
+                 alt="숲과 바위 사이로 흙길이 이어지는 전장" data-alt-en="A dirt road winding between trees and rocks">
+            <img class="clubman" src="assets/projectww-clubman.webp" loading="lazy" width="558" height="560"
+                 alt="돌무기를 들고 파란 천을 두른 석기 시대 유닛" data-alt-en="A Stone Age unit in blue carrying a stone weapon">
+          </div>
+          <figcaption>
+            <span data-language="ko">ProjectWW 개발 아트</span><span data-language="en">ProjectWW development artwork</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
 
-  <div class="card">
-    <h2>문의 · Contact</h2>
-    <p><a href="mailto:CONTACT_EMAIL">CONTACT_EMAIL</a></p>
-  </div>
+    <section class="contact-section container" id="contact" aria-labelledby="contact-title">
+      <div class="contact-panel">
+        <div>
+          <h2 id="contact-title"><span data-language="ko">문의하기</span><span data-language="en">Get in touch</span></h2>
+          <p><span data-language="ko">게임 이용 및 스튜디오 관련 문의를 받습니다.</span><span data-language="en">For game support and studio inquiries.</span></p>
+        </div>
+        <a class="contact-email" href="mailto:support@tempeststudio.co.kr">support@tempeststudio.co.kr</a>
+      </div>
+    </section>
+  </main>
 
-  <footer>
-    <a href="privacy.html">개인정보처리방침 · Privacy Policy</a>
-    <span>© 2026 Tempest Studio</span>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small>© 2026 <span data-language="ko">템페스트 스튜디오</span><span data-language="en">Tempest Studio</span></small>
+      <a href="privacy.html" data-language="ko">개인정보처리방침</a>
+      <a href="privacy.html#privacy-en" data-language="en">Privacy Policy</a>
+    </div>
   </footer>
-</div>
+
+  <script>
+    if (document.documentElement.lang === 'en') {
+      for (const image of document.querySelectorAll('[data-alt-en]')) {
+        image.alt = image.dataset.altEn;
+      }
+    }
+  </script>
 </body>
 </html>
